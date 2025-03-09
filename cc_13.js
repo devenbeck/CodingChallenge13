@@ -1,0 +1,1 @@
+// Task 1 completed on html file, header, main section, and footer display in browser
