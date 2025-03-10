@@ -25,3 +25,15 @@ function createElement(name, position) {
 createElement('Natalie Devenbeck', "Student");
 createElement('Valeria Aceituno', "HR-Representative");
 //correctly displays 2 employees and remove buttons in chrome
+
+//Task 3: Converting NodeLists to Arrays for Bulk Updates
+//function for bulk updating to cards
+function bulkUpdateEmployeeCards() {
+    const employeeCards = document.querySelectorAll('.employeeCard');
+    const cardArray = Array.from(employeeCards);
+    cardArray.forEach(card => {
+        card.style.backgroundColor = 'lightpink'; //update style of each card
+    });
+}
+//test case
+bulkUpdateEmployeeCards();  //works and what was a white background now is pink for employee cards
