@@ -37,3 +37,11 @@ function bulkUpdateEmployeeCards() {
 }
 //test case
 bulkUpdateEmployeeCards();  //works and what was a white background now is pink for employee cards
+
+//Task 4: Implementing Removal of Employee Cards with Event Bubbling
+//attach a click event listener on the parent container
+removeButton.addEventListener('click', function(event){
+    console.log('Remove button has been clicked');
+    event.stopPropagation();
+    employeeCard.remove();
+})
