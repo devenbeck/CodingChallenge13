@@ -41,7 +41,25 @@ bulkUpdateEmployeeCards();  //works and what was a white background now is pink 
 //Task 4: Implementing Removal of Employee Cards with Event Bubbling
 //attach a click event listener on the parent container
 removeButton.addEventListener('click', function(event){
-    console.log('Remove button has been clicked');
+    console.log('Remove button has been clicked');    //2 buttons i had with names now dont appear on chrome
     event.stopPropagation();
     employeeCard.remove();
 })
+
+//Task 5 Inline Editing of Employee Details
+
+let editButton = document.createElement("button");
+editButton.textContent = "Edit";
+card.appendChild(editButton);
+const saveButton = document.createElement('text content');
+positionInput.value = paragraph.textContent;
+const saveButton = document.createElement('button');
+saveButton.textContent = 'Save';
+card.appendChild(positionInput);
+ appending new functions i made above
+card.innerHTML = '';
+card.appendChild(nameInput);
+card.appendChild(position);
+card.appendChild(saveButton);
+
+});
